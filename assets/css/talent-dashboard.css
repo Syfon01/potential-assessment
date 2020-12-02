@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  ;
+}
+
+.dashboard-bg{
+  background-image: url(../img/dashboard-talentt.png);
+
+}
+.navbar-transparent{
+  background-color: transparent;
+}
+.overlay {
+  position: fixed; 
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  /* z-index: 2; */
+  cursor: pointer;
+}
+
+.header-text{
+  color: #C8C8C8;
+}
+.text-muted{
+  color: #777777!important;
+}
+
+.tx-16{
+font-size: 1rem!important;
+}
+.tx-14{
+font-size: 0.875rem!important;
+}
+.tx-13{
+font-size: 0.8125rem!important;
+}
+.tx-12 {
+  font-size: 0.75rem !important;
+}
+.card-style-body, .card-header{
+  padding: 10px 10px!important;
+}
+.title-text{
+  font-weight: 200!important;
+}
+.dash-card-header {
+  background-color: #E1E1E1!important;
+}
+.dash-card-body{
+  background-color: #F9F9F9!important;
+  border-radius: 0.25rem;
+}
+.input-background{
+  background-color: #686A6C;
+  border: none;
+}
+.searchbar-form{
+  width: 100%;;
+}
+.search-form button{
+  border: none;
+  background-color: #686A6C;
+}
+
+.bg-green{
+  background-color: #148A6E;
+  border: 1px solid rgba(240, 232, 232, 0.541);
+  border-radius: 5px;
+}
+.bg-grey{
+  background-color: #FFFFFF24;
+  border: 1px solid #707070;
+  border-radius: 5px;
+
+}
+.text-grey{
+  color: #BDC6CF;
+}
+.card-transparent{
+  background-color: rgba(66, 65, 71, 0.6);
+}
+.bg-card-section{
+  background-color: rgba(66, 65, 71, 1.0);
+}
+.master-card{
+  border: 1px solid #b7d2e5b7!important;
+}
+.badge-green{
+  background-color: #29868E;
+}
+.side-dash-header{
+    border-bottom: 1px solid #D8E5EE;
+    padding: 0!important;
+
+}
+.text-regular{
+  font-weight: 400;
+}
+.fixed-body{
+max-height: 75vh;
+overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+} 
+.card-shadow:hover{
+box-shadow: 0.1rem .15rem .35rem rgba(0, 0, 0, .2) !important;
+}
+
+.bg-greyy{
+  background-color: #DDDDDD;
+}
+.btn-filter{
+  background-color: #ff4444;
+  color: #fff!important;
+}
+.btn-light{
+background-color: #F9F9F9!important;
+color: #777777!important;
+}
+.btn-red{
+color: #fff!important;
+background-color: #801010;
+}
+
+.list-inline-skills {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-inline-skills .list-inline-item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.list-inline-skills .filter{
+  display: block;
+  background-color: #FFFFFF24;
+  border: 1px solid #707070;
+  color: #fff!important;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #1b2e4b;
+  border-radius: 0.25rem;
+}
+
+.custom-control.custom-checkbox {
+  padding-left: 0;
+}
+
+label.custom-control-label {
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+label.custom-control-label::before,
+label.custom-control-label::after {
+  right: 0;
+  left: auto;
+}
+.custom-control-label::before{
+  background: transparent!important;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  border-color: #148A6E;
+  background-color:#148A6E!important;
+
+}
+.irs--round .irs-handle{
+  border: 1px solid #fff!important;
+  background-color:#ff4444 !important;
+  width: 15px!important;
+  height: 15px!important;
+  top: 31px!important;
+}
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single{
+  background-color:#ff4444 !important;
+}
+.irs--round .irs-bar{
+    background-color:#ff4444 !important;
+}
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before{
+  border-top-color: #ff4444!important;
+}
+.close-btn{
+  color:#F63C28;
+  font-size: 18px;
+}
+.clear-filter{
+  border-bottom: 1px dashed #D8E5EE;
+}
+.close-filter{
+  font-weight: 400;
+  cursor: pointer;
+}
+.fixed-modal {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.side-dash-header{
+  background-color: #424147!important;
+}
+
+.filterr{
+  background-color: #F9F9F9 !important;
+  box-shadow: 0 .12rem .25rem rgba(0, 0, 0, .15) !important;
+
+}
+@media (min-width: 992px) {
+  .dash-card-header {
+    background-color: #E1E1E1 !important;
+    height: 85px;
+  }
+}

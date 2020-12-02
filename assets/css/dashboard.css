@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  ;
+}
+
+.navbar-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+.offset-div{
+  margin-top: -20%;
+}
+
+input[type=checkbox]:checked+label.strikethrough {
+  text-decoration: line-through;
+}
+
+.todo-img{
+  width: 25px;
+  height: 25px;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  border-color: #000!important;
+  background-color: #000!important;
+}
+.view-profile{
+  text-decoration: underline;
+  color: #358ED7!important;
+  font-weight: 700;
+}
+.overlay {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(62, 88, 88, 0.5);
+  /* z-index: 2; */
+  cursor: pointer;
+}
+.greet-text{
+  font-weight: 300;
+}
+.dashboard-img{
+  min-height: 30vh!important;
+}
+@media (max-width: 576px) {
+  .offset-div{
+    margin-top: -40%;
+  }
+  .dashboard-img {
+    min-height: 30vh !important;
+  }
+}
+.dir-img{
+  width: 30px;
+  height: 30px;
+}
+.view-all{
+  color: #358ED7!important;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+/* .img-group span:not(:first-child) .dir-img {
+  margin-left: -10px;
+  margin-right: 0;
+  position: relative;
+  float:left;
+} */
+
+.label-color{
+  color: #777;
+}
