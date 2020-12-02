@@ -379,3 +379,6 @@ font-weight: 600;
   color: #108043;
   box-shadow:2px 2px 4px 2px #BBE5B3;
 }
+.wizard > .content > .title{
+  font-size:24px!important;
+}
