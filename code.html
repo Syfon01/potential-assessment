@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Staff Module Management">
+    <title>School Management</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
+
+
+    <style>
+      *{
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      }
+      body { -webkit-font-smoothing: antialiased; }
+      </style>
+
+  </head>
+  <body class="">
+    
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+          <a href="" class="aside-menu-link">
+            <i data-feather="menu"></i>
+            <i data-feather="x"></i>
+          </a>
+        </div>
+        <div class="aside-body">
+          <div class="aside-loggedin">
+            <div class="d-flex align-items-center justify-content-start">
+              <a href="" class="avatar"><img
+                  src=""
+                  class="rounded-circle" alt="user"></a>
+              <div class="aside-alert-link">
+                <a href="" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
+              </div>
+            </div>
+            <div class="aside-loggedin-user">
+              <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+                <h6 class="tx-semibold mg-b-0">Mr Victor</h6>
+                <i data-feather="chevron-down"></i>
+              </a>
+              <p class="tx-color-03 tx-12 mg-b-0">Lecturer</p>
+            </div>
+            <div class="collapse" id="loggedinMenu">
+              <ul class="nav nav-aside mg-b-0">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit"></i> <span>Setting</span></a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link"><i data-feather="log-out"></i> <span>Sign Out</span></a></li>
+              </ul>
+            </div>
+          </div><!-- aside-loggedin -->
+          <ul class="nav nav-aside">
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><i data-feather="dashboard"></i> <span>Dashboard</span></a></li>
+            
+            <li class="nav-item"><a href="attendance.html" class="nav-link"><i data-feather="hash"></i> <span>Attendance</span></a></li>
+            <li class="nav-item"><a href="course.html" class="nav-link"><i data-feather="help-circle"></i> <span>Courses</span></a></li>
+            <li class="nav-item active"><a href="code.html" class="nav-link"><i data-feather="book-open"></i> <span>QR Code</span></a></li>
+           
+            
+          </ul>
+        </div>
+      </aside>
+  
+      <div class="content ht-100v pd-0">
+        <div class="content-header d-flex justify-content-between">
+            <p class="tx-14 mb-0 pt-2">Dashboard</p>
+          <nav class="navbar navbar-expand-lg">
+
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Logout</a>
+                  </li>
+                  
+                </ul>
+          </nav>
+        </div>
+  
+        <div class="content-body">
+          <div class="container mt-5">
+           <div class="row">
+               <div class="col-lg-5 col-12 mt-5">
+                  <a href=""> 
+                   <div class="card tx-center">
+                       <div class="card-body pd-50">
+                            <p class="mb-0 tx-black tx-20">Publish QR Code</p>
+                       </div>
+                   </div>
+                </a>
+               </div>
+               <div class="col-lg-2 col-0"></div>
+               <div class="col-lg-5 col-12 mt-5">
+                <a href=""> 
+                    <div class="card tx-center">
+                        <div class="card-body pd-50">
+                             <p class="mb-0 tx-black tx-20">Deactivate QR Code</p>
+                        </div>
+                    </div>
+                 </a>
+               </div>
+
+           </div>
+          </div>
+        </div>
+      </div>
+  
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+
+    <script src="assets/js/drop.js"></script>
+    <script src="assets/js/dropzone.js"></script>
+    
+  </body>
+</html>
