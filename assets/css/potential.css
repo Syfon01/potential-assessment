@@ -1,0 +1,22 @@
+.bg-red{
+  background-color: #DB4C3F!important;
+  color: #fff!important;
+  border-radius: 10px!important;
+}
+.tx-custom{
+  color: #595959;
+}
+.tx-17{
+  font-size: 17px;
+}
+.list-group-item-action{
+  color:#12263F!important ;
+}
+.list-group-item.new.active{
+  background-color: #EBEBEC!important;
+  border-color: #EBEBEC;;
+}
+.icon-fill{
+  fill: #595959;
+  color: #fff!important;
+}

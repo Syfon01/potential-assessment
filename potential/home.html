@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Staff Module Management">
+    <title>Potential Assessment</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="../assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/potential.css">
+    <link rel="stylesheet" href="../assets/css/dashforge.css">
+    <style>
+      *{
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      }
+      body { -webkit-font-smoothing: antialiased; }
+      </style>
+  </head>
+  <body>
+    <header class="navbar-header-fixed">
+      <nav class="navbar navbar-expand-lg bg-white bd navbar-header-fixed pd-b-0">
+        <div class="container">
+          <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-feather="menu" class="wd-20 ht-20"></i>
+          </button>    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active pb-2">
+                <a class="nav-link header-link" href="/staff/home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header-link" href="#">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header-link" href="#">Talent center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header-link" href="#">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header-link" href="#">TalentX</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mr-5">
+              <a href="/supervisor/index.html" class="btn btn-sm btn-outline pd-y-2"><i data-feather="power" class="mr-2"></i>Sign out</a>
+            </ul>
+        </div>
+         <a class="navbar-brand navbar-right tx-bold tx-spacing--2 order-1 logo-link ml-5" href="/staff/home.html"><img src="../assets/img/logo.png" class="img-fluid"/></a>
+      </nav>    
+        <div class="navbar-black">
+          <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style2 bg-transparent bed-pad mg-b-0">
+                <li class="breadcrumb-item pb-0"><a href="./index.html" class="text-bread text-capitalize">Home</a></li>
+                <li class="breadcrumb-item pb-0 active text-bread text-capitalize" aria-current="page">Assessment</li>
+              </ol>
+            </nav>
+          </div>          
+        </div>           
+    </header>
+    <section class="secondary-bg mt-5">
+      <div class="container mt-5 py-5">
+        <div class="card card-body bg-red pd-y-15">
+          <div class="row">
+            <div class="col-md-9 col-12">
+              <div class="row pd-l-0 pd-md-l-10">
+                <div class="avatar avatar-xl"><img src="../assets/img/avatar-xl.jpg" class="rounded-circle" alt=""></div>
+              <div class="pd-l-10 pd-t-10">
+                <p class="tx-20 mb-0 tx-semibold">Henry Chukwuemeka</p>
+                <p class="tx-14">Solution Architect (Internal Innovation)</p>
+              </div>
+              </div>
+              
+            </div>
+            <div class="col-md-3 float-right">
+              <p class="row mb-0 pd-t-10 float-right">
+                <span class="col tx-40 pd-r-0">41.1%</span>
+                <span class="col tx-14 tx-semibold tx-uppercase pd-t-8 pd-x-0">Assessment 
+                  Completion</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 mt-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action new active mb-3 tx-semibold" id="list-qualitative-list" data-toggle="list" href="#list-qualitative" role="tab" aria-controls="home">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-17">Qualitative Assessment</p>
+                  <i data-feather="check-circle" class="wd-20 ht-20 tx-success"></i>
+                </div>
+              </a>
+              <div class="card card-body pd-15 bd-b-0">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-17 tx-semibold">Potential Assessment</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+                <p class="tx-custom tx-12 mt-2 mb-0" >Select a section of the potential assessment and rate</p>
+              </div>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-competence-list" data-toggle="list" href="#list-competence" role="tab" aria-controls="profile">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Competence</p>
+                  <i data-feather="check-circle" class="wd-20 ht-20 tx-success"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-committment-list" data-toggle="list" href="#list-committment" role="tab" aria-controls="messages">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Committment</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-contribution-list" data-toggle="list" href="#list-contribution" role="tab" aria-controls="messages">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Contribution</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-agility-list" data-toggle="list" href="#list-agility" role="tab" aria-controls="messages">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Learning Agility</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-values-list" data-toggle="list" href="#list-values" role="tab" aria-controls="messages">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Values</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new bd-y-0" id="list-derailment-list" data-toggle="list" href="#list-derailment" role="tab" aria-controls="messages">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-16 tx-medium">Derailment</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action new mt-3" id="list-learning-list" data-toggle="list" href="#list-learning" role="tab" aria-controls="settings">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 tx-17 tx-semibold">Learning Needs</p>
+                  <i data-feather="clock" class="wd-20 ht-20 tx-warning"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-4">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-qualitative" role="tabpanel" aria-labelledby="list-qualitative-list">
+                  <h2>Qualitative Assessment</h2>
+                        <section>
+                          <div class="card">
+                            <div class="card-header pd-20">
+                              <div class="d-flex justify-content-between">
+                                <p class="tx-16 mb-0">Complete Henry’s Qualitative Assessment
+                                  <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                                </p>
+                                <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                              </div>
+                            </div>
+                            <div class="card-body pd-0">
+                              <div class="pd-20 bd-b">
+                                <p class="tx-custom mb-0 tx-12">Rate Productivity</p>
+                                <div class=" pd-t-5">
+                                  <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                                  <div class="row pd-x-20">
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                        >
+                                      <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                                    </div>
+        
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                                    </div>
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                        checked>
+                                      <label class="custom-control-label label-box" for="GenSome">Average</label>
+                                    </div>
+        
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pd-20 bd-b">
+                                <p class="tx-custom mb-0 tx-12">Rate Quality of Day-to-Day Work</p>
+                                <div class=" pd-t-5">
+                                  <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                                  <div class="row pd-x-20">
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                        >
+                                      <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                                    </div>
+        
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                                      <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                                    </div>
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                                      <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                                    </div>
+        
+                                    <div class="custom-control custom-radio item col-md-3 col-6">
+                                      <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                                      <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                                    </div>
+                                  </div>
+                                </div>
+  
+                              </div>
+                              
+                              <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                              <button class="btn btn-primary pd-x-20">Submit Qualitative Assessment</button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </section>
+              </div>
+              <div class="tab-pane fade" id="list-competence" role="tabpanel" aria-labelledby="list-competence-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Competence
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>
+              </div>
+              <div class="tab-pane fade" id="list-committment" role="tabpanel" aria-labelledby="list-committment-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Committment
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>              
+              </div>
+              <div class="tab-pane fade" id="list-derailment" role="tabpanel" aria-labelledby="list-derailment-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Derailment
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>              
+              </div>
+              <div class="tab-pane fade" id="list-contribution" role="tabpanel" aria-labelledby="list-contribution-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Contribution
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>              
+              </div>
+              <div class="tab-pane fade" id="list-agility" role="tabpanel" aria-labelledby="list-agility-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Learning Agility
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>              
+              </div>
+              <div class="tab-pane fade" id="list-values" role="tabpanel" aria-labelledby="list-values-list">
+                <h2>Potential Assessment</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Values
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">7 Questions</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Functional Competence - Rate Henry Chukwuemeka’s Demonstration of Functional Competencies</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of technical skills for area of work at own level</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="GenConsistent">Role Model</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenMost">Above Average</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio" class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box" for="GenSome">Average</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="GenSeldom">Poor</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-12">Organisational Competence - Rate Henry Chukwuemeka’s Customer-centricity</p>
+                        <div class=" pd-t-5">
+                          <p class="tx-bold mb-3">1. Demonstration of Organisation-wide competencies e.g Customer-centricity; Digital Capability</p>
+                          <div class="row pd-x-20">
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box" for="OwnConsistent">Consistently</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnMost">Mostly</label>
+                            </div>
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSome">Sometimes</label>
+                            </div>
+
+                            <div class="custom-control custom-radio item col-md-3 col-6">
+                              <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                              <label class="custom-control-label label-box" for="OwnSeldom">Seldom</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Competency Assessment</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>              
+              </div>
+              <div class="tab-pane fade" id="list-learning" role="tabpanel" aria-labelledby="list-learning-list">
+                <h2>Learning Needs</h2>
+                <section>
+                  <div class="card">
+                    <div class="card-header pd-20">
+                      <div class="d-flex justify-content-between">
+                        <p class="tx-16 mb-0">Select Learning Needs for Henry
+                          <span><i data-feather="check-circle" class="wd-22 ht-22 tx-success pd-l-5"></i></span>
+                        </p>
+                        <p class="tx-12 mb-0 tx-uppercase tx-custom">maximum of 7</p>
+                      </div>
+                    </div>
+                    <div class="card-body pd-0">
+                      <div class="pd-20 bd-b">
+                        <p class="tx-custom mb-0 tx-14">
+                          <span><i data-feather="alert-circle" class="wd-24 ht-24 tx-secondary pd-l-5 icon-fill"></i></span>
+                          You are required to add at least 5</p>
+                          <div class="row pd-x-20 pd-t-10">
+                            <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                >
+                              <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="GenMost"  class="custom-control-input">
+                              <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                            </div>
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                checked>
+                              <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                              <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="training" class="custom-control-input" checked
+                                >
+                              <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="human"  class="custom-control-input">
+                              <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="people"  class="custom-control-input">
+                              <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                              <input type="checkbox" id="insurance"  class="custom-control-input">
+                              <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
+                      <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer text-white">
+      <div class="container">
+        <p class="p-14 mb-0 text-capitalize">&copy; 2020 UBA Group. All Rights Reserved.</p>
+      </div>
+    </section>
+  
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/lib/feather-icons/feather.min.js"></script>
+    <script src="../assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/dashforge.js"></script>
+    <script src="../assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="../assets/js/dashforge.settings.js"></script>
+    <script src="../../assets/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../../assets/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="../assets/js/drop.js"></script>
+    <script src="../assets/js/dropzone.js"></script>
+    <script>
+    $('#tableData,#ArchivedData').DataTable({
+      responsive: true,
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      }
+    });
+  </script>
+
+
+
+  </body>
+</html>
