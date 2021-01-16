@@ -62,6 +62,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style2 bg-transparent bed-pad mg-b-0">
                 <li class="breadcrumb-item pb-0"><a href="./index.html" class="text-bread text-capitalize">Home</a></li>
+                <li class="breadcrumb-item pb-0"><a href="./index.html" class="text-bread text-capitalize">Potential Assesment</a></li>
                 <li class="breadcrumb-item pb-0 active text-bread text-capitalize" aria-current="page">Assessment</li>
               </ol>
             </nav>
@@ -927,6 +928,7 @@
                 </section>              
               </div>
               <div class="tab-pane fade" id="list-learning" role="tabpanel" aria-labelledby="list-learning-list">
+                                 
                 <h2>Learning Needs</h2>
                 <section>
                   <div class="card">
@@ -938,59 +940,304 @@
                         <p class="tx-12 mb-0 tx-uppercase tx-custom">maximum of 7</p>
                       </div>
                     </div>
-                    <div class="card-body pd-0">
-                      <div class="pd-20 bd-b">
-                        <p class="tx-custom mb-0 tx-14">
-                          <span><i data-feather="alert-circle" class="wd-24 ht-24 tx-secondary pd-l-5 icon-fill"></i></span>
-                          You are required to add at least 5</p>
-                          <div class="row pd-x-20 pd-t-10">
-                            <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="GenConsistent" class="custom-control-input"
-                                >
-                              <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
-                            </div>
-
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="GenMost"  class="custom-control-input">
-                              <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
-                            </div>
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="GenSome"  class="custom-control-input"
-                                checked>
-                              <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
-                            </div>
-
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
-                              <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
-                            </div>
-
-                            <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="training" class="custom-control-input" checked
-                                >
-                              <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
-                            </div>
-
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="human"  class="custom-control-input">
-                              <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
-                            </div>
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="people"  class="custom-control-input">
-                              <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
-                            </div>
-
-                            <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
-                              <input type="checkbox" id="insurance"  class="custom-control-input">
-                              <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                    <div class="card-body pd-x-20 pd-y-10">
+                      <ul class="nav nav-tabs nav-justified mt-3" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link pot tx-semibold active" id="enterprise-tab" data-toggle="tab" href="#enterprise" role="tab" aria-controls="home" aria-selected="true">Enterprise</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link pot tx-semibold" id="leadership-tab" data-toggle="tab" href="#leadership" role="tab" aria-controls="profile" aria-selected="false">Leadership</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link pot tx-semibold" id="functional-tab" data-toggle="tab" href="#functional" role="tab" aria-controls="contact" aria-selected="false">Functional</a>
+                        </li>
+                      </ul>
+                        <div class="tab-content pd-t-20" id="myTabContent">
+                          <div class="tab-pane fade show active" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
+                            <div class="pd-x-20 pd-y-10">
+                            <h2>Enterprise</h2>
+                              <p class="tx-custom mb-0 tx-14">
+                                You are required to add at least 5</p>
+                                <div class="row pd-x-20 pd-t-10">
+                                  <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                      >
+                                    <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenMost"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                      checked>
+                                    <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                                    <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="training" class="custom-control-input" checked
+                                      >
+                                    <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="human"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="people"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="insurance"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                                  </div>
+                                </div>
+                                <div class="mt-4">
+                                  <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="tab-pane fade pd-x-20 pd-y-10" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
+                            <h2>Leadership</h2>
+                            <div class="media align-items-stretch">
+                              <ul class="nav nav-tabs flex-column wd-150" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link pot inner tx-medium active" id="self-tab" data-toggle="tab" href="#self" role="tab" aria-controls="home" aria-selected="true">Leading Self</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link pot inner tx-medium" id="profile-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Leading Others</a>
+                                </li>
+                                <li class="nav-item pd-x-0">
+                                  <a class="nav-link pot inner tx-medium pd-x-0" id="contact-tab" data-toggle="tab" href="#business" role="tab" aria-controls="business" aria-selected="false">Leading Business</a>
+                                </li>
+                              </ul>
+                              <div class="media-body">
+                              <div class="tab-content bd bd-gray-300 bd-l-0 pd-20" id="myTabContent">
+                                <div class="tab-pane fade show active" id="self" role="tabpanel" aria-labelledby="self-tab">
+                                  <h4>Leading Self</h4>
+                                  <div class="">
+                                    <p class="tx-custom mb-0 tx-14">
+                                      You are required to add at least 5</p>
+                                      <div class="row pd-x-20 pd-t-10">
+                                        <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                            >
+                                          <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenMost"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                            checked>
+                                          <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                                          <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="training" class="custom-control-input" checked
+                                            >
+                                          <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="human"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="people"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="insurance"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">
+                                  <h4>Leading Others</h4>
+                                    <div class="">
+                                  <p class="tx-custom mb-0 tx-14">
+                                    You are required to add at least 5</p>
+                                    <div class="row pd-x-20 pd-t-10">
+                                      <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                          >
+                                        <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                                      </div>
+          
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="GenMost"  class="custom-control-input">
+                                        <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                          checked>
+                                        <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                                      </div>
+          
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                                        <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                                      </div>
+          
+                                      <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="training" class="custom-control-input" checked
+                                          >
+                                        <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                                      </div>
+          
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="human"  class="custom-control-input">
+                                        <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="people"  class="custom-control-input">
+                                        <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                                      </div>
+          
+                                      <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                        <input type="checkbox" id="insurance"  class="custom-control-input">
+                                        <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                                      </div>
+                                    </div>
+                                    <div class="mt-4">
+                                      <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+                                  <h4>Leading Business</h4>
+                                    <div class="">
+                                    <p class="tx-custom mb-0 tx-14">
+                                      You are required to add at least 5</p>
+                                      <div class="row pd-x-20 pd-t-10">
+                                        <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                            >
+                                          <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenMost"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                            checked>
+                                          <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                                          <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="training" class="custom-control-input" checked
+                                            >
+                                          <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="human"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="people"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                                        </div>
+            
+                                        <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                          <input type="checkbox" id="insurance"  class="custom-control-input">
+                                          <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              </div>
                             </div>
                           </div>
+                          <div class="tab-pane fade" id="functional" role="tabpanel" aria-labelledby="functional-tab">
+                            <div class="pd-x-20 pd-y-10">
+                            <h2>Functional</h2>
+                              <p class="tx-custom mb-0 tx-14">
+                                You are required to add at least 5</p>
+                                <div class="row pd-x-20 pd-t-10">
+                                  <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenConsistent" class="custom-control-input"
+                                      >
+                                    <label class="custom-control-label label-box tx-medium" for="GenConsistent">Talent Management</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenMost"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="GenMost">Cisco CCNA</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenSome"  class="custom-control-input"
+                                      checked>
+                                    <label class="custom-control-label label-box tx-medium" for="GenSome">Financial Markets</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="GenSeldom"  class="custom-control-input" checked>
+                                    <label class="custom-control-label label-box tx-medium" for="GenSeldom">Cyber Security</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="training" class="custom-control-input" checked
+                                      >
+                                    <label class="custom-control-label label-box tx-medium" for="training">Training & Development</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="human"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="human">Human Resources (HR)</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="people"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="people">People Management</label>
+                                  </div>
+      
+                                  <div class="custom-control custom-checkbox item col-md-6 col-6 mg-y-5">
+                                    <input type="checkbox" id="insurance"  class="custom-control-input">
+                                    <label class="custom-control-label label-box tx-medium" for="insurance">Insurance</label>
+                                  </div>
+                                </div>
+
+                                <div class="mt-4">
+                                  <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
-                      </div>
+                     
+    
                       
-                      <div class="mt-4 pd-x-20 pd-t-0 pd-b-20">
-                      <button class="btn btn-primary pd-x-20">Submit Learning Needs</button>
-                      </div>
                     </div>
                   </div>
                   
