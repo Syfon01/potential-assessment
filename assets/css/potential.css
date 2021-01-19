@@ -68,3 +68,6 @@ flex: 1;
 .nav-tabs .nav-link.inner{
   padding: 0!important;
 }
+.card-gray{
+  background-color: #E1E1E1!important;
+}
