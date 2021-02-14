@@ -71,3 +71,32 @@ flex: 1;
 .card-gray{
   background-color: #E1E1E1!important;
 }
+.nav-link.active{
+  color: #fff!important;
+  font-weight: 700!important;
+}
+.nav-link.tab.active{
+color: #000!important;
+font-weight: 700!important;
+}
+.nav-link.active.bg{
+  background-color: #DB4C3F!important;
+  font-weight: 700!important;
+}
+.card-foot{
+  background-color: #EDF2F7!important;
+}
+.btn-percent{
+  background-color: #E4ECF7!important;
+  color: #415276!important;
+}
+.text-grey{
+  color: #818181;
+}
+/* .text-bread{
+  font-size: 14px!important;
+  font-weight: 400!important;
+} */
+.text-bread.active{
+  color: #6E84A3!important;
+}
