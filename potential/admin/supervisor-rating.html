@@ -121,7 +121,7 @@
                       <td>Head Office</td>
                       <td>Johnson Tudor</td>
                       <td><span class="btn btn-pending py-0 tx-semibold tx-12">Pending</span></td>
-                      <td><a href="./view.html" class="btn btn-sm btn-outline pd-y-2">View</a></td>
+                      <td><button class="btn btn-sm btn-outline pd-y-2" data-toggle="modal" data-target="#pendingModal" >View</button></td>
                     </tr>
                     <tr>
                       <th scope="row">
@@ -136,7 +136,7 @@
                       <td>Head Office</td> 
                       <td>Johnson Tudor</td>
                       <td><span class="btn btn-completed py-0 tx-semibold tx-12">Completed</span></td>
-                      <td><a href="./view.html" class="btn btn-sm btn-outline pd-y-2">View</a></td>
+                      <td><button class="btn btn-sm btn-outline pd-y-2" data-toggle="modal" data-target="#completedModal" >View</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -144,6 +144,123 @@
             </div>
             
           </div>
+
+              <!--Pending Modal -->
+              <div class="modal fade" id="pendingModal" tabindex="-1" aria-labelledby="pendingModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header pd-y-10">
+                      <h5 class="modal-title tx-14" id="pendingModalLabel">Confirmation</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-4 col-6">
+                          <div class="row">
+                            <div class="avatar avatar-lg"><img src="../../assets/img/avatar-xl.jpg" class="rounded-circle" alt=""></div>
+                            <div class="pd-l-10 pd-t-5">
+                              <p class="tx-18 mb-0 tx-semibold">Nnnena George</p>
+                              <small class="tx-gray-800 tx-12">nnenna.george@ubagroup.com</small>
+                              <div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <p class="mb-0 tx-14">Assistant Manager - AM</p>
+                        <p class="mb-0 tx-14">CIO Organisation</p>
+                        <p class="mb-0 tx-14">Directorate 7</p>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div class="float-right">
+                          <button class="btn btn-primary tx-semibold">Send Reminder</button>
+                        </div>
+                      </div>
+                      </div>
+                      <hr/>
+                    <p class="tx-14 tx-bold mb-1">John has rated 0 of 1 supervisor.</p>
+  
+                      <div class="row">
+                        <div class="col-md-4 col-12 mg-t-10">
+                          <div class="card card-body pd-y-10 card-assess">
+                            <div class="row">
+                              <div class="avatar avatar-online avatar-sm sm-avatar">
+                                <img src="../../assets/img/avatar-xl.jpg" class="rounded-circle" alt="">
+                              </div>
+                              <p class="tx-14 mb-0 pd-l-10 pd-t-3">Friday Dunsin</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+  
+              <!--completes Modal -->
+              <div class="modal fade" id="completedModal" tabindex="-1" aria-labelledby="completedModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header pd-y-10">
+                      <h5 class="modal-title tx-14" id="completedModalLabel">Confirmation</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-4 col-6">
+                          <div class="row">
+                            <div class="avatar avatar-lg"><img src="../../assets/img/avatar-xl.jpg" class="rounded-circle" alt=""></div>
+                            <div class="pd-l-10 pd-t-5">
+                              <p class="tx-18 mb-0 tx-semibold">Nnnena George</p>
+                              <small class="tx-gray-800 tx-12">nnenna.george@ubagroup.com</small>
+                              <div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <p class="mb-0 tx-14">Assistant Manager - AM</p>
+                        <p class="mb-0 tx-14">CIO Organisation</p>
+                        <p class="mb-0 tx-14">Directorate 7</p>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div class="float-right">
+                          <p class="badge-complete tx-semibold tx-success">Completed</p>
+                        </div>
+                      </div>
+                      </div>
+                      <hr/>
+                    <p class="tx-14 tx-bold mb-1">John has rated 1 of 1 supervisor.</p>
+  
+                      <div class="row">
+                        <div class="col-md-4 col-12 mg-t-10">
+                          <div class="card card-body pd-y-10 card-assess">
+                            <div class="row">
+                              <div class="avatar avatar-online avatar-sm sm-avatar">
+                                <img src="../../assets/img/avatar-xl.jpg" class="rounded-circle" alt="">
+                              </div>
+                              <p class="tx-14 mb-0 pd-l-10 pd-t-3">Friday Dunsin</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
               
           </div>
         </div>
