@@ -100,3 +100,20 @@ font-weight: 700!important;
 .text-bread.active{
   color: #6E84A3!important;
 }
+.card-assess{
+  background-color: #fafbfd!important;
+}
+.badge-complete{
+  background-color: rgba(1,125,115,0.19);
+  color: #017D73;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.sm-avatar{
+  width: 22px!important;
+  height: 22px!important;
+}
+.avatar-online::after{
+  background-color: #10b759!important;
+  content:attr('@')!important;
+}
