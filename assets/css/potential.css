@@ -1,3 +1,6 @@
+body{
+  color: #12263F;
+}
 .bg-red{
   background-color: #DB4C3F!important;
   color: #fff!important;
@@ -85,6 +88,7 @@ font-weight: 700!important;
 }
 .card-foot{
   background-color: #EDF2F7!important;
+  padding: 16px!important;
 }
 .btn-percent{
   background-color: #E4ECF7!important;
@@ -110,8 +114,8 @@ font-weight: 700!important;
   padding: 5px 10px;
 }
 .sm-avatar{
-  width: 22px!important;
-  height: 22px!important;
+  width: 26px!important;
+  height: 26px!important;
 }
 
 .icon-status{
